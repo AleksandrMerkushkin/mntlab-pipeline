@@ -61,13 +61,7 @@ jacoco {
     reportsDir = file("$buildDir/customJacocoReportDir")
 }
 
-jacocoTestReport {
-    reports {
-        xml.enabled false
-        csv.enabled false
-        html.destination "${buildDir}/jacocoHtml"
-    }
-}
+
 // To specify a license in the pom:
 install {
   repositories.mavenInstaller {
